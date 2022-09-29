@@ -1,0 +1,61 @@
+.sinin_div {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.sinup_div {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.intro {
+    margin-bottom: 100px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("images/whi.jpg");
+    background-color: #cccccc;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.conainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 60px;
+}
+
+.sign_in_para,
+.sign_up_para {
+    font-size: 24px;
+    color: rgb(7, 166, 206);
+}
+
+.sign_in_button,
+.sign_up_button {
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(113, 184, 224);
+}
+
+.link {
+    text-decoration: none;
+}
