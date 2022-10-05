@@ -8,6 +8,7 @@
     <title>Lesgram Media Site</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="imaUpload.css">
 </head>
 
 <body>
@@ -21,9 +22,9 @@
                 <input type="search" placeholder="search for people and events">
             </div>
             <div class="create">
-                <a href="capureDeails.html">
+                <!-- <a href="capureDeails.html">
                     <button class="btn btn-primary" for="create-post">Create</button>
-                </a>
+                </a> -->
 
                 <div class="profile-picture">
                     <img src="css/images/c.jpg" alt="My Profile Photo">
@@ -493,157 +494,75 @@
             </div>
             <!--........RIGHT...........-->
             <div class="right">
-                <div class="messages">
-                    <div class="heading">
-                        <h4>Messages</h4><i class="uil uil-edit"></i>
-                    </div>
-                    <!--      search bar        -->
-                    <div class="search-bar">
-                        <i class="uil uil-search"></i>
-                        <input type="search" placeholder="Search messages" id="message-search">
-                    </div>
-                    <!--      MESSAGE CATEGORY      -->
-                    <div class="category">
-                        <h6 class="active">Primary</h6>
-                        <h6>General</h6>
-                        <h6 class="message-requests">Requests(5)</h6>
-                    </div>
-                    <!--       MESSAGE       -->
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="css/images/u.jpg" alt="Control">
-                        </div>
-                        <div class="message-body">
-                            <h5>Jillianeer Prosper</h5>
-                            <p class="text-muted">Hey there</p>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="css/images/h.jpg" alt="Control">
-                        </div>
-                        <div class="message-body">
-                            <h5>Collins Job</h5>
-                            <p class="text-muted">Tomorrow birthday</p>
-                        </div>
-                    </div>
+                <div class="dd" style="display:flex; align-items:center; justify-content:center;">
+                    <input type="file" id="fileElem" accept="image/*" style="display:none" />
+                    <a href="#" style="text-decoration:none; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px; color:gold; border-style:solid; border-width:1px; border-color:chartreuse; background-color:darkgoldenrod; padding:5px; border-radius:10px;  width: 200px; display:flex; align-items:center; justify-content:center;"
+                        id="fileSelect">Upload Photo</a>
+                    <div id="fileList">
 
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="css/images/w.jpg" alt="Control">
-                        </div>
-                        <div class="message-body">
-                            <h5>Dangote Arionzi</h5>
-                            <p class="text-muted">How was your day?</p>
-                        </div>
-                    </div>
-
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="css/images/e.jpg" alt="Control">
-                        </div>
-                        <div class="message-body">
-                            <h5>Rosen General</h5>
-                            <p class="text-muted">lol bro</p>
-                        </div>
-                    </div>
-
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="css/images/p.jpg" alt="Control">
-                            <div class="active"></div>
-                        </div>
-                        <div class="message-body">
-                            <h5>Junior Businge</h5>
-                            <p class="text-bold">Yoo, wasapp</p>
-                        </div>
-                    </div>
-
-                    <div class="message">
-                        <div class="profile-picture">
-                            <img src="css/images/u.jpg" alt="Control">
-                            <div class="active"></div>
-                        </div>
-                        <div class="message-body">
-                            <h5>El Bheta</h5>
-                            <p class="text-bold">Kahyaka ki kukwo?</p>
-                        </div>
-                    </div>
-                    <!--         End Of Message     -->
-
-                </div>
-
-                <!--               Friend   Requests      -->
-                <div class="friend-requests">
-                    <h4>Requests</h4>
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="css/images/z.jpg" alt="Photo">
-                            </div>
-                            <div>
-                                <h5>Godwax Big Size</h5>
-                                <p class="text-muted">
-                                    22 Mutual Friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                    Accept
-                                </button>
-                            <button class="btn">
-                                    Decline
-                                </button>
-                        </div>
-                    </div>
-
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="css/images/q.jpg" alt="Photo">
-                            </div>
-                            <div>
-                                <h5>Gallagher Trevor</h5>
-                                <p class="text-muted">
-                                    55 Mutual Friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                    Accept
-                                </button>
-                            <button class="btn">
-                                    Decline
-                                </button>
-                        </div>
-                    </div>
-
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture">
-                                <img src="css/images/a.jpg" alt="Photo">
-                            </div>
-                            <div>
-                                <h5>Blaise Matuidi</h5>
-                                <p class="text-muted">
-                                    10 Mutual Friends
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                    Accept
-                                </button>
-                            <button class="btn">
-                                    Decline
-                                </button>
-                        </div>
                     </div>
                 </div>
 
+                <div style="background-color:rgb(207, 207, 172)" class="right-sidebar">
+                    <!--=-------education history   ----------------->
+                    <div class="top">
+                        <div class="sidebar-title">
+                            <h style="color:rgb(236, 244, 247); font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:25px;">Education background</h>
+                        </div>
+                        <div id="educ_bg">
+
+
+                        </div>
+                        <!--=-------adding education history   ----------------->
+                        <div class="sidebar-title">
+                            <h style="color:ivory; font-size:20px">ADD education history</h>
+                            <div class="addtoggle-btn">
+                                <input style="color:aliceblue" type="button" value="add" onclick="educationtoggle()">
+                            </div>
+                        </div>
+                        <div class="education-form" id="education-form">
+                            <div class="form-popup">
+                                <div>
+                                    <span>School</span>
+                                    <span><input type="text" placeholder="Institution" id="insititution" >
+                                    </span>
+                                    <br>
+                                    <span>Year</span>
+                                    <span><input type="date" placeholder="the year" id="date">
+                                    </span>
+                                    <br>
+                                    <span>Award</span>
+                                    <span><input type="text" placeholder="enter the Award" id="award">
+                                    </span>
+                                    <br>
+                                    <div class="create-btn">
+                                        <label style="color:rgb(251, 252, 253)" class="btn btn-primary" for="create-post" onclick="AddEducation()">Add</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="padding-left:10px; background-color:darkgray;" class="create-btn">
+                    <label style="height: 30px; margin-top:10px; border-radius:5px; border-style:solid; border-width:1px;" class="btn btn-primary" for="create-post" onclick="AddHobby()">AddHobby</label>
+                    <p>
+                        <input style="height: 20px; margin-bottom:10px; border-radius:5px; border-style:solid; border-width:1px;" id="hobbie name" type="text" placeholder="input your hobby">
+                    </p>
+
+                </div>
+
+                <div class="shortcut-links" id="Hobbies">
+                </div>
             </div>
+
+
+
+
+
+
+
+        </div>
         </div>
     </main>
 
@@ -704,6 +623,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="imaEduc.js"></script>
 
 </body>
 
